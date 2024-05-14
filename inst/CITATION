@@ -5,5 +5,5 @@ bibentry(
                person("Simon Michael", "Papalexiou"),
                person("Amin", "Elshorbagy")),
   year     = "2020",
-  note     = "R package version 0.1.6"
+  note     = "R package version 0.1.7"
 )

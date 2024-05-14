@@ -70,35 +70,35 @@ return_period
 return_period <- tBrXII(x = c(500, 600, 700, 800), para = c(scale, shape1, shape2))
 return_period
 
-## ---- fig.cap = "Theoretical L-space of `BrIII` Distribution"-----------------
+## ----fig.cap = "Theoretical L-space of `BrIII` Distribution"------------------
 lspace_BrIII
 
-## ---- fig.cap = "Theoretical L-space of `BrXII` Distribution"-----------------
+## ----fig.cap = "Theoretical L-space of `BrXII` Distribution"------------------
 lspace_BrXII
 
-## ---- fig.cap = "Theoretical L-space of `GG` Distribution"--------------------
+## ----fig.cap = "Theoretical L-space of `GG` Distribution"---------------------
 lspace_GG 
 
-## ---- fig.cap = "Example of single L-points on the L-space of `BrIII` Distribution"----
+## ----fig.cap = "Example of single L-points on the L-space of `BrIII` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX, type = "s", Dist = "BrIII")
 
-## ---- fig.cap = "Example of single L-points on the L-space of `BrXII` Distribution"----
+## ----fig.cap = "Example of single L-points on the L-space of `BrXII` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX, type = "s", Dist = "BrXII")
 
-## ---- fig.cap = "Example of single L-points on the L-space of `GG` Distribution"----
+## ----fig.cap = "Example of single L-points on the L-space of `GG` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX, type = "s", Dist = "GG")
 
 ## -----------------------------------------------------------------------------
 colnames(FLOW_AMAX_MULT) <- paste0("site.", 1:10)
 knitr::kable(head(FLOW_AMAX_MULT), caption = "The first few observations of streamflow at 10 sites")
 
-## ---- fig.cap = "Example of multiple L-points on the L-space of `BrIII` Distribution"----
+## ----fig.cap = "Example of multiple L-points on the L-space of `BrIII` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX_MULT, type = "m", Dist = "BrIII", shape = 20)
 
-## ---- fig.cap = "Example of multiple L-points on the L-space of `BrXII` Distribution"----
+## ----fig.cap = "Example of multiple L-points on the L-space of `BrXII` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX_MULT, type = "m", Dist = "BrXII", shape = 20)
 
-## ---- fig.cap = "Example of multiple L-points on the L-space of `GG` Distribution"----
+## ----fig.cap = "Example of multiple L-points on the L-space of `GG` Distribution"----
 com_sam_lspace(sample = FLOW_AMAX_MULT, type = "m", Dist = "GG", shape = 20)
 
 ## -----------------------------------------------------------------------------
